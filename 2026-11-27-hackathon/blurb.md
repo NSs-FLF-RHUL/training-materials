@@ -32,3 +32,15 @@ Pre-requisites:
   - "Developer Ops": adding supporting infrastructure to a software project like documentation, automatic code formatting, and similar.
   - Organising and designing a codebase.
 - **Please bring your laptop and a charger!**
+
+Broad plan:
+
+- 10:00 Welcome
+- 10:10 Setup for the day; ensure everyone has repo access, has it downloaded and installed, knows how to branch and which branch we're working off. Figure out who's most interested in doing what.
+- 10:30 Initial demo of the GitHub workflow (see the [setup notes](./setup.md) regarding this demo).
+- 11:00 People work individually / in small pair-programming teams to tackle their first issues, which they can select from the list of open issues.
+  RSEs on hand to provide support or suggestions for this.
+  Participants open PRs when they're ready, and optionally review other people's PRs if they feel confident enough.
+- LUNCH for an hour at some point between 12:00-14:00
+- Afternoon: continues in the same vein as the above, hopefully with participants moving on to the "advanced" issues that the RSEs have pre-made, or tackling issues they have noticed during the workshop itself!
+  RSEs on hand to answer any and all questions, and run demonstrations if there's something that would be good to show to everyone.
