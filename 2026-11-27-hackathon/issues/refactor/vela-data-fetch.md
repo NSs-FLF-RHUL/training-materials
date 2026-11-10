@@ -1,0 +1,10 @@
+- The Vela residuals should not be tracked in the repo. Let's store them in another file and then have a function to fetch them if necessary.
+  - We can move the residuals to GH releases to fetch them from the web.
+  - All the interfaces then take an array directly, not the path.
+  - Some functions can be moved around to accommodate loading; `vela_data` for example can just be part of this new `fetch_vela_residuals` function.
+  - (Optional) We can take this further, and turn the `Vela(NamedTuple)` in `kinds.py` into a proper class with attached methods.
+    - Move the `Vela` class definition into it's own file. Somewhere like `glitch.data.vela` would be appropriate.
+    - The "loader" function that you just made can become a `classmethod` of the `Vela` class - it can also return a `Vela` instance.
+    - Any "intermediate" functions you find that are involved in loading the Vela residuals / data should also be moved into your new file. You can decide (or ask for advice on) whether they should become methods, `classmethod`s, or `staticmethod`s. However you choose to approach things, don't try and move too many things at once! Make small, incremental commits and make sure the regression tests pass each time, before you move on to the next change!
+    - From a pre-emptive sweep of the repository; the following functions will need to be moved around: `paper_vela` (which will become that class method), `vela_data`, and `vela_from_glitch`.
+    - Don't forget to "clean up" / delete files that are now un-necessary once you reorganise things!
