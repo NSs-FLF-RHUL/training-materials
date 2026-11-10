@@ -1,0 +1,7 @@
+
+<!-- Negative testing -->
+- (Slightly more complex code, but the ideas are the same as the `cumulative_integral` issue). The `numerics.every_pair` file contains the `every_pair` function. Read this function to understand what it does. Then, create a suitable suite of tests for it, that cover the important ways in which it should behave.
+  - Hint: `every_pair` takes another function as an input - it would be wise to pick function(s) that use their arguments in simple ways, rather than going for something complicated.
+  - Hint: if you are struggling to figure out what the inputs to each test case should be, they will be something like: a function `f` that takes 2 (or more) arguments (to be given as the `run` argument to `every_pair`), two arrays corresponding to the values that need to be looped over (`inner`, `outer`), and another input `args` that contains any values that are held constant over the runs.
+  - Once you have a few test cases, try to parametrise your various test functions in the manner described above.
+  - Negative testing: you might have spotted that `every_pair` relies on the user providing `args` correctly, based on the function `run` that is given. What do you expect to happen if, for example, `run` doesn't take any extra values, but some `args` are passed anyway? Can you think of a way to write a test to see if what you expect does indeed happen? [Hint: `pytest` might be able to assist...](https://docs.pytest.org/en/stable/how-to/assert.html#assertraises).

@@ -48,3 +48,11 @@ It also has the added bonus of allowing us to store the input values in separate
 - [Creating a Class for Pinning Tables](./refactor/pinning-tables-class.md).
 
 ### Testing and Test-Driven Changes
+
+These tasks will focus on unit testing - not just writing tests, but also organising and designing them.
+And, more importantly, why we want them in the first place - if we're going to make later improvements to the code, we need some way of checking that we're not _changing_ what the code is meant to be doing!
+We will also explore the idea of negative testing (checking that our code does throw errors if we try and do something silly with it), and motivate the reason for having tests in place before you then undertake expansions or reorganisations of your code.
+
+- [Writing Unit Tests (Parametrisation)](./testing/writing-tests-params.md)
+- [Writing Unit Tests (Negative testing)](./testing/negative-testing.md)
+- [Writing Unit Tests (Safeguarding against future changes)](./testing/safeguarding.md)
