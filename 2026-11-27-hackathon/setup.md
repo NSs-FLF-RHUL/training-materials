@@ -20,6 +20,8 @@
 We will need Isaac (since it's his codebase) to provide a short overview of what the code does too.
 He can provide this to one of the RSEs, or he's welcome to go through it himself on the day.
 
+**NOTE** Repository hash that we'll be working from, if we wanted to "recreate" the codebase, is FIXME-WHEN-REGRESSION-TESTS-ARE-MERGED.
+
 ## Initial Demo
 
 To ensure that we don't break anything, we should add some regression tests prior to letting everyone go wild.
